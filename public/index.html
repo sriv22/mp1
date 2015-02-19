@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Linc</title>
+  <link rel="shortcut icon" href="favicon.ico" />                                       <!--favicon-->  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel='stylesheet' href='lib/typicons/src/font/typicons.min.css'/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+    <body>
+    <header>    <!--Naviagation Bar--> 
+        <div id="nav-bar">  
+            <ul>
+                <li> <a href="#intro" class="smoothScroll"> Intro </a></li>             <!--3 points of navigation bar--> 
+                <li> <a href="#purpose" class="smoothScroll"> Purpose </a></li>         <!--3 points of navigation bar-->  
+                <li> <a href="#pitch" class="smoothScroll"> Join </a></li>              <!--3 points of navigation bar-->  
+            </ul>
+        </div>
+    </header>
+    
+        <!--Begin Progress Bar--> 
+        <progress value="0" id="progressBar">                                           <!--Starting point - so value =0--> 
+            <div class="progress-container">
+                <span class="progress-bar"></span>
+            </div>
+        </progress>
+    
+        <!--Webpage Introduction Title--> 
+        <div class="header">
+            <span id="headerTitle"> Connecting Jaipur and Champaign </span>
+        </div>
+    
+        <!--Begin Section1: Intro--> 
+        <div id="intro"> 
+            <span class="title"><br> <br> <br>Who we are </span>
+            <span class="text"> <br> <br>Students from the University of Illinois are working in close relation with Malaviya National Institute of Technology to solve India's most pressing issues: fluorosis and sanitation. </span>
+        
+        <!--Begin carousel in intro section--> 
+        <div id="slider1" class="csslider infinity">
+            <input type="radio" name="slides" id="slides_1">
+            <input type="radio" name="slides" id="slides_2">
+            <input type="radio" name="slides" checked="checked" id="slides_3">
+            <input type="radio" name="slides" id="slides_4">
+            <input type="radio" name="slides" id="slides_5">
+            <ul>
+                <li> <img src="pics/pic15.jpg"> </li>                           <!--Images of Jaipur to use--> 
+                <li> <img src="pics/pic1.jpg"> </li>
+                <li> <img src="pics/pic4.jpg"> </li>
+                <li> <img src="pics/pic3.jpg"> </li>
+                <li> <img src="pics/pic2.jpg"> </li>
+                <li> <img src="pics/pic5.jpg"> </li>
+            </ul>
+            <div class="arrows">
+                <label for="slides_1"></label>                                  <!--Arrows to have--> 
+                <label for="slides_2"></label>
+                <label for="slides_3"></label>
+                <label for="slides_4"></label>
+                <label for="slides_5"></label>
+                <label for="slides_1" class="goto-first"></label>
+                <label for="slides_5" class="goto-last"></label>
+            </div>
+            <div class="navigation">
+            <div>
+                <label for="slides_1"></label>                                  <!--Labels for the images--> 
+                <label for="slides_2"></label>
+                <label for="slides_3"></label>
+                <label for="slides_4"></label>
+                <label for="slides_5"></label>
+            </div>
+            </div>
+        </div>    
+        </div>    
+    
+         <!--Begin Section2: What do we do--> 
+        <div id="purpose"> <span class="title"> What we do </span>
+            <span class="text"> <br> We'll be working in relation to the other students and devloping effective ways to address these issues. This includes creating proper indicators and/or building feasible toilets and water filtration systems. </span> 
+        </div>
+    
+        <!--Begin Section3: What can you do help--> 
+        <div id="pitch"> <span class="title"> More About India</span>
+            <span class="text"> <br> India is a very diverse place. Join us over Spring Break as we embark on our trip to Jaipur, India to do field work and implement our strategies. Check out the following video displaying India. <br> #Incredible India </span>
+
+            <p><a href="#openModal">
+						<input type="button" value="Video" class="video-button"></a>
+						</p>  
+            <iframe class="modal-video" width="560" height="315" src="https://www.youtube.com/embed/_qBE_Z8JbzY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <!--JS scripts to run to make website dynamic--> 
+        <script src="lib/jquery-2.1.3.min/index.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="http://localhost:35729/livereload.js"></script>
+    
+        <!--Footer - that has columns and columns contain vector social media icons (typicons)--> 
+        <div id="footer"> 
+            <div id="contentBox" style="margin:5% auto; width:100%"> 
+            <!--Column 1--> 
+            <div id="column1" style="float:left; margin:0; width:33%;">
+                <ul>
+                    <l1> <a style="text-decoration:none; color=inherit" href="http://www.facebook.com"> <span class="typcn typcn-social-facebook"> <span> </a> </l1> </ul>
+                <ul>
+                    <l1> <a style="text-decoration:none; color=inherit" href="http://www.instagram.com"> <span class="typcn typcn-social-instagram"> <span> </a> </l1> </ul>
+                <ul>
+                    <l1> <a style="text-decoration:none; color=inherit" href="https://plus.google.com"> <span class="typcn typcn-social-google-plus"> <span> </a> </l1> </ul>        
+            </div>
+                    
+            <!--Column 2--> 
+            <div id="column2" style="float:left; margin:0;width:33%;">
+                <ul>
+                    <l1> <a style="text-decoration:none; color=inherit" href="https://linc.illinois.edu"> <span class="footerCaption"> Contact us at www.linc.illinois.edu </span> </a> </l1> </ul>
+            </div>
+
+            <!--Column 3--> 
+            <div id="column3" style="float:left; margin:0;width:33%">
+                <ul>
+                    <l1> <a style="text-decoration:none; color=inherit" href="https://twitter.com"> <span class="typcn typcn-social-twitter"> <span> </a> </l1> </ul>
+                <ul>
+                    <l1> <a style="text-decoration:none; color=inherit" href="https://tumblr.com"> <span class="typcn typcn-social-tumbler"> <span> </a> </l1> </ul>
+                <ul>
+                    <l1> <a style="text-decoration:none; color=inherit" href="https://pinterest.com"> <span class="typcn typcn-social-pinterest"> <span> </a> </l1> </ul> 
+            </div>
+            </div>  
+        </div>
+    
+</body>
+</html>
